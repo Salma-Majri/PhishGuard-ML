@@ -18,8 +18,8 @@ An advanced Natural Language Processing (NLP) web application built with **Strea
 |-------|----------|----|-----------|--------|
 | **Naive Bayes** | 99.1% | 0.964 | 0.994 | 0.936 |
 | **Logistic Regression** | 98.8% | 0.953 | 0.978 | 0.930 |
-| **NB + Calibration** | 98.9% | 0.956 | — | — |
-| **LR + Char N-Grams** | 99.0% | 0.962 | — | — |
+| **NB + Calibration** | 98.9% | 0.956 | 	0.010 | 0.007 |
+| **LR + Char N-Grams** | 99.0% | 0.962 | 	0.012 | 0.024 |
 
 ---
 
