@@ -1,6 +1,7 @@
 # 🛡️ PhishGuard: Phish or Legit? (NLP Text Classification)
-
 An advanced Natural Language Processing (NLP) web application built with **Streamlit**, **Scikit-Learn**, and **Python**, designed to detect phishing and spam SMS messages using machine learning pipelines, multi-model evaluation, and **Explainable AI (XAI)** capabilities.
+
+🔗 **Live Demo:** [Try PhishGuard on Streamlit Cloud](https://phishguard-ml-majrisalma.streamlit.app)
 
 ---
 
