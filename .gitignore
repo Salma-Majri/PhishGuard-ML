@@ -1,0 +1,14 @@
+# Virtual Environment
+.venv/
+venv/
+ENV/
+
+# Results / Generated outputs
+results/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Streamlit
+.streamlit/
