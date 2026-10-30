@@ -28,22 +28,19 @@ def preprocess(text: str) -> str:
     text = MONEY_RE.sub(" moneytok ", text)
     return NUM_RE.sub(" numtok ", text)
 
-
 def load_data(path="data/messages.csv"):
-    """Charge le dataset SMS (UCI Spam Collection) et convertit les labels en binaire."""
+    """Charge le dataset SMS (UCI Spam Collection) depuis l'URL GitHub et convertit les labels en binaire."""
     url = "https://raw.githubusercontent.com/justmarkham/pycon-2016-tutorial/master/data/sms.tsv"
     
-    # Lecture directe depuis l'URL ou depuis un fichier local si téléchargé
     try:
         df = pd.read_csv(url, sep='\t', header=None, names=['label', 'text'])
     except Exception:
-        # Fallback vers le fichier local si l'environnement n'a pas accès internet
+        # Fallback local s'il n'y a pas d'internet
         df = pd.read_csv(path, sep='\t', header=None, names=['label', 'text'])
         
     # Mapping : 'spam' -> 1 (phish/positif), 'ham' -> 0 (legit/négatif)
     df["y"] = df["label"].map({'spam': 1, 'ham': 0})
     return df
-
 
 
 
